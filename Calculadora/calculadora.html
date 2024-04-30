@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .calculator__display {
+            height: 60px;
+            background-color: white;
+            font-size: 24px;
+            text-align: right;
+            padding: 15px;
+            border: 1px solid #ced4da;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1 class="display-4">Calculadora</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="calculator">
+                    <div class="calculator__display bg-light p-2 mb-3">0</div>
+                    <div class="calculator__keys">
+                        <div class="row">
+                            <div class="col"><button class="btn btn-primary btn-block key--operator" data-action="add">+</button></div>
+                            <div class="col"><button class="btn btn-primary btn-block key--operator" data-action="subtract">-</button></div>
+                            <div class="col"><button class="btn btn-primary btn-block key--operator" data-action="multiply">&times;</button></div>
+                            <div class="col"><button class="btn btn-primary btn-block key--operator" data-action="divide">÷</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><button class="btn btn-light btn-block">7</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block">8</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block">9</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><button class="btn btn-light btn-block">4</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block">5</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block">6</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><button class="btn btn-light btn-block">1</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block">2</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block">3</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><button class="btn btn-light btn-block">0</button></div>
+                            <div class="col-4"><button class="btn btn-light btn-block" data-action="decimal">.</button></div>
+                            <div class="col-4"><button class="btn btn-warning btn-block" data-action="clear">AC</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><button class="btn btn-success btn-block key--equal" data-action="calculate">=</button></div>
+                            <div class="col-4"><button class="btn btn-info btn-block" data-action="percentage">%</button></div>
+                            <div class="col-4"><button class="btn btn-info btn-block" data-action="square-root">√</button></div>
+                            <div class="col-4"><button class="btn btn-info btn-block" data-action="square">x²</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="javascript.js"></script>
+</body>
+</html>
